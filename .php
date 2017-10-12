@@ -9,10 +9,20 @@
     <?php
 $cars = array
   (
-  array("physics",19,45,"chmestry",18,47,"biolgy",17,44,"math",15,49)
+  array("math",18,45),
+  array("biolgy",15,46),
+  array("chimstry",16,45),
+  array("physics",17,47)
   );
-  
-echo $cars[0][0].": medteam: ".$cars[0][1].", final: ".$cars[0][2].".<br>";
+    
+for ($row = 0; $row < 4; $row++) {
+  echo "<p><b>Row number $row</b></p>";
+  echo "<ul>";
+  for ($col = 0; $col < 3; $col++) {
+    echo "<li>".$cars[$row][$col]."</li>";
+  }
+  echo "</ul>";
+}
 ?>
     
 </body>
