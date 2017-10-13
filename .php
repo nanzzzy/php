@@ -1,11 +1,4 @@
-<!doctype html>
 
-<html lang="en">
-<head>
-    <title>php</title>
-
-</head>
-<body>
     <?php
 $cars = array
   (
@@ -24,7 +17,4 @@ for ($row = 0; $row < 4; $row++) {
   echo "</ul>";
 }
 ?>
-    
-</body>
 
-</html>
